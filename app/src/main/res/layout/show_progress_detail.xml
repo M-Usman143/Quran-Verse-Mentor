@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+
+            <TextView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:text="Your Progress"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_80sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                 />
+
+
+            <TextView
+                android:id="@+id/student_Name"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Usman"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overall Progress"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90% complete"
+        android:id="@+id/overallresult"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="end" />
+<!--  70  left-->
+</LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBaroverall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="90"
+            android:max="100"
+            android:progressTint="@android:color/black"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+
+                <TextView
+                    android:id="@+id/Detail_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:text="Detailed Progress"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold" />
+
+        <!-- Pronouncation Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pronouncation"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90% complete\nYou're doing well"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/pronouncation_percentage"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarPronunciation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="90"
+            android:max="100"
+            android:progressTint="@android:color/black"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+
+
+        <!-- Fluency Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fluency"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90% complete\nYou're doing well"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/fluency_percentage"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="end" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBarFluency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="90"
+            android:max="100"
+            android:progressTint="@android:color/black"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <!-- Memorization Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tajweed"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90% complete\nYou're doing well"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/tajweed_percentage"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarTajweed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="90"
+            android:max="100"
+            android:progressTint="@android:color/black"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <!-- Tajweed Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_info_details"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Memorization"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90% complete\nYou're doing well"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/memorization_percentage"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="end" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBarMemorization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="90"
+            android:max="100"
+            android:progressTint="@android:color/black"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <!-- Overall Understanding Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Essential Dua's"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90% complete\nYou're doing well"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/essentialduas"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBaressentailduass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="90"
+            android:max="100"
+            android:progressTint="@android:color/black"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+    </LinearLayout>
+</ScrollView>
+
+

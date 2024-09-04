@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.completeSurah">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2A7F3E"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            android:id="@+id/cardbiew"
+            android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Surah Fatiah"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="35dp"
+                            android:layout_marginLeft="40dp"
+                            android:id="@+id/surahnames"
+                            android:layout_marginTop="40dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Surah Fatiah"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="40dp"
+                            android:id="@+id/relavation"
+                            android:layout_marginTop="80dp"
+                            />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/quranicon"
+                            android:layout_marginLeft="290dp"
+                            android:layout_marginTop="10dp"
+                            />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ayaat: "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textSize="25sp"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginLeft="@dimen/_190sdp"
+                            />
+<!--                        left 270-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:id="@+id/Ayaatnumber"
+                            android:layout_marginTop="100dp"
+                            />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="بِسْمِ ٱللَّٰهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="3dp"
+                            android:id="@+id/bismillahtextview"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textSize="30dp"
+                            android:layout_marginLeft="170dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شُروع اَللہ کے پاک نام سے جو بڑا مہر بان نہايت رحم والا ہے"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="50dp"
+                            android:id="@+id/bisTranslation"
+                            />
+
+                </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/completesurahDEtail"
+    android:layout_below="@+id/cardbiew"
+    />
+
+</RelativeLayout>

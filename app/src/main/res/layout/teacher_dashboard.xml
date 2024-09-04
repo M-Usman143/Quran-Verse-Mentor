@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.teacher_dashboard">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/bg_layout"
+            android:id="@+id/firstLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/playfair_display"
+                    android:textSize="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    />
+                <!-- Circular ImageView -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/man"
+                    android:id="@+id/userprofilepic"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <!-- Hello TextView -->
+                <TextView
+                    android:id="@+id/first_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Welcome"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/userprofilepic"/>
+
+                <!-- Muhammad Usman TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:id="@+id/usernameTextView"
+                    android:text="Muhammad Usman"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/first_txt1" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="16dp"
+                android:layout_below="@id/first_txt1"
+                android:id="@+id/searchbar">
+
+
+                    <androidx.appcompat.widget.SearchView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:hint="Search..."
+                        app:queryHint="Search..."
+                        android:id="@+id/searchView"
+                        android:padding="0.2dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:background="@color/white"
+                        android:paddingBottom="18dp"
+                        android:textColorHint="@android:color/darker_gray" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/image_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:elevation="20dp"
+            android:background="@drawable/bg_sec_layout">
+
+                <!-- Quran Pak ImageButton -->
+
+
+                <RelativeLayout
+                    android:layout_width="85dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="-15dp"
+                    android:paddingRight="2dp"
+                    android:layout_marginRight="2dp">
+
+
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_for_imagebtn"
+                            android:src="@drawable/quran"
+                            android:padding="5dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="left"
+                            android:contentDescription="Th is button is for open the Quran E majeed"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/imgbtn1"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quran"
+                            android:layout_marginStart="20sp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textColor="@color/black"
+                            android:layout_below="@id/imgbtn1"
+                            />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="-16dp"
+                    android:layout_below="@id/usernameTextView">
+
+
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_for_imagebtn"
+                            android:src="@drawable/prayer"
+                            android:backgroundTint="@color/white"
+                            android:padding="5dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="left"
+                            android:contentDescription="Th is button is for open the Quran E majeed"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/imgbtn2"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prayers"
+                            android:textColor="@color/black"
+android:fontFamily="@font/ubuntu_medium"
+                            android:layout_below="@id/imgbtn2"
+                            android:layout_marginLeft="24dp"
+                            android:layout_centerInParent="true"
+                            />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_below="@id/usernameTextView">
+
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_for_imagebtn"
+                            android:src="@drawable/qibla"
+                            android:backgroundTint="@color/white"
+                            android:padding="5dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="left"
+                            android:contentDescription="Th is button is for open the Quran E majeed"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/imgbtn3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Qibla"
+                            android:textColor="@color/black"
+                            android:layout_below="@id/imgbtn3"
+                            android:layout_marginLeft="24dp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:layout_centerInParent="true"
+                            />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_below="@id/usernameTextView">
+
+
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_for_imagebtn"
+                            android:src="@drawable/koran"
+                            android:padding="5dp"
+                            android:backgroundTint="@color/white"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="left"
+                            android:contentDescription="This is button is for open the Quran E majeed"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/imgbtn4"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgbtn4"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="Tajweed"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textColor="@color/black" />
+
+                </RelativeLayout>
+    </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/playfair_display"
+    android:text="Schedule Class"
+    android:layout_marginTop="530dp"
+    android:textColor="@color/black"
+    android:textSize="25sp"
+    android:layout_marginStart="8dp"
+    android:id="@+id/scheduleHeading"
+    android:textStyle="bold"
+    />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movetoscheduleAct"
+            android:src="@drawable/keyboard_arrow_right"
+            android:layout_marginTop="530dp"
+            android:layout_marginLeft="350dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_teachers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recycler_modifier"
+            android:layout_below="@+id/scheduleHeading"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"
+            />
+
+</RelativeLayout>
+</ScrollView>

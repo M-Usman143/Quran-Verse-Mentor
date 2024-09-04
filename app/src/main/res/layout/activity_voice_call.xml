@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".activities.Voice_call">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Code For Verification:"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="270dp"
+        android:textSize="22dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get started"
+        android:id="@+id/showtargetID"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="320dp"
+        android:textSize="20dp"
+        android:textIsSelectable="true"
+
+        />
+<!--    top 300-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="125dp"
+        app:boxStrokeColor="@color/black"
+        android:transitionName="email_txt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entre Code"
+            android:id="@+id/usernamesET"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColorHint="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="360dp"
+        android:contentDescription="audioCallbutton"
+        android:id="@+id/videocallbtn"
+        android:layout_toRightOf="@id/voicecallbtn"
+        />
+
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="300dp"
+        android:contentDescription="videoCallbutton"
+        android:id="@+id/voicecallbtn"
+        />
+<!--    left 300-->
+</RelativeLayout>

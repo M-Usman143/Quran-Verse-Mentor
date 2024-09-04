@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "704729405559",
+    "firebase_url": "https://mentorquranapp-default-rtdb.firebaseio.com",
+    "project_id": "mentorquranapp",
+    "storage_bucket": "mentorquranapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704729405559:android:cda4f85e1a922ab30d4e72",
+        "android_client_info": {
+          "package_name": "com.example.mentorquranapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT1Uhf4ihlyNFH7irCvYK_HhuVuaJPXQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704729405559:android:e93afc2a72a3426b0d4e72",
+        "android_client_info": {
+          "package_name": "com.example.quranmentor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT1Uhf4ihlyNFH7irCvYK_HhuVuaJPXQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

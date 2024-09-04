@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">QuranMentor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+    <string name="msg_token_fmt">FCM Token: %s</string>
+
+
+    <string name="payment_methods">Payment Methods</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="other_payment_methods">Other Payment Methods</string>
+    <string name="credit_debit_card">Credit/Debit Card</string>
+    <string name="google_wallet">Google Wallet</string>
+    <string name="pay_with">Pay With</string>
+    <string name="forgottext">Enter your email for the verification process.</string>
+    <string name="forgottext2">Set the new passward for you account so you can login and access all the features.</string>
+    <string name="today_weather_format">Today\'s Temperature: %d°C</string>
+    <string name="AppID">9b6fc2df6639467fa1a355ae33f258eb</string>
+    <string name="token">007eJxTYJDhnZIWysOqOX/b7cqy0ydDq95maqw428p7VclJz/jaIg4FBssks7Rko5Q0MzNjSxMz87REw0RjU9PEVGPjNCNTi9QkwbDotIZARoaX3x0ZGRkgEMQXYCgsLUrMK0stKk7NTc0ryS9iYAAAREoi9A==</string>
+    <string name="channel">quranversementor</string>
+
+    <string name="PUBLISHABLE_KEY">pk_test_51PLANbEHKrtiZemdtqYtrlsWbrCQt80mNPFT6CFH2yKTxP9yNw2asTdbODB5r6r5BzHqztXCB6UDZKSCaPSYndsu00jnmq80se</string>
+    <string name="SECRET_KEY">sk_test_51PLANbEHKrtiZemdxhjTGm5gXj6NZA6etVOrgjwoMtLueQamekgzbNAi6a0gkIjXelVmzQk9HI9Scb7Np8LMBuW800KxXcUyzg</string>
+
+
+</resources>

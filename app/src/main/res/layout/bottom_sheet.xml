@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayoutBSB"
+    tools:context=".Fragments.BottomSheetFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Class"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:fontFamily="@font/playfair_display"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and Time"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/playfair_display"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="55dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="Date"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="Month"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="Hour"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/playfair_display"
+                android:text="Minute"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="150dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginLeft="170dp"
+        />
+
+</RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:orientation="vertical"
+        android:id="@+id/second_Layout"
+        android:layout_marginTop="340dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/playfair_display"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Write the title"
+            android:background="@drawable/chating_edittext"
+            android:layout_marginStart="25sp"
+            android:padding="5dp"
+            android:id="@+id/title_edit_text"
+            android:layout_marginEnd="25sp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/playfair_display"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Description"
+            android:background="@drawable/chating_edittext"
+            android:layout_marginStart="25sp"
+            android:padding="5dp"
+            android:id="@+id/description_edit_text"
+            android:layout_marginEnd="25sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Save"
+            android:id="@+id/save_button"
+            android:layout_marginLeft="200dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@drawable/bgbtn_payment_method"
+            />
+</LinearLayout>
+
+
+</RelativeLayout>

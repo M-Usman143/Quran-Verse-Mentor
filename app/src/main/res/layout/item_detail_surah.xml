@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstlayout"
+        android:background="#fff5f5f5">
+<LinearLayout
+    android:layout_width="25sp"
+    android:layout_height="25dp"
+    android:background="@drawable/surahdetail_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="1"
+        android:id="@+id/ayatnumber"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        />
+
+
+
+</LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstlayout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/arabic_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            />
+        <TextView
+            android:id="@+id/translations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/arabic_texts"
+            android:textSize="25dp"
+            android:textIsSelectable="true"
+            />
+
+    </RelativeLayout>
+    
+    
+    
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/arabic_text"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textIsSelectable="true"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/translation"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textIsSelectable="true"
+        />
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuranMentor" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">#044227</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="Base.Theme.QuranMentor.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">#044227</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <!-- Customize other theme attributes here. -->
+    </style>
+
+    <style name="Base.Theme.QuranMentor.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">#044227</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+
+    <style name="CustomFontStyle">
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+    </style>
+    <style name="Theme.QuranMentor" parent="Base.Theme.QuranMentor" />
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:weekNumberColor">@color/white</item>
+        <item name="android:headerYearTextAppearance">@color/white</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CalenderViewMonthCustomText" parent="android:TextAppearance.DeviceDefault">
+        <item name="android:textColor">@color/white</item> <!-- Set month text color to white -->
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

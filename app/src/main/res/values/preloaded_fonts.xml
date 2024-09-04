@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/almendra_sc</item>
+        <item>@font/antic</item>
+        <item>@font/anton</item>
+        <item>@font/bangers</item>
+        <item>@font/bebas_neue</item>
+        <item>@font/merriweather_light</item>
+        <item>@font/playfair_display</item>
+        <item>@font/roboto_slab_thin</item>
+        <item>@font/strait</item>
+        <item>@font/ubuntu_medium</item>
+    </array>
+</resources>

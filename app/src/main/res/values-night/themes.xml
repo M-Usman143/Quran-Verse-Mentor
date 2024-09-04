@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuranMentor" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Customize your light theme here. -->
+        <!-- Set the status bar color to black -->
+        <item name="android:statusBarColor">#044227</item>
+        <!-- Set the navigation bar color to black if needed -->
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <!-- Customize other theme attributes here. -->
+    </style>
+
+    <!-- Dark theme variant -->
+    <style name="Base.Theme.QuranMentor.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- Set the status bar color to black -->
+        <item name="android:statusBarColor">#044227</item>
+        <!-- Set the navigation bar color to black if needed -->
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <!-- Customize other theme attributes here. -->
+    </style>
+
+    <!-- Light theme variant -->
+    <style name="Base.Theme.QuranMentor.Light" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- Set the status bar color to black -->
+        <item name="android:statusBarColor">#044227</item>
+        <!-- Set the navigation bar color to black if needed -->
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <!-- Customize other theme attributes here. -->
+    </style>
+
+    <!-- Apply the theme -->
+    <style name="Theme.QuranMentor" parent="Base.Theme.QuranMentor" />
+</resources>

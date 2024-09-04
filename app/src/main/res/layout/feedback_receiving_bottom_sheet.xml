@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    android:background="@drawable/rounded_bottom_sheet_background"
+
+    tools:context=".Fragments.Feedback_receiving_bottom_sheet">
+
+    <TextView
+        android:id="@+id/feedbackTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Your Precious Feedback to your Teachers"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_25sdp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/giveFeedbackButton"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Give Feedback"
+            android:fontFamily="@font/ubuntu_medium"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/feedback_bottom_bg_bl"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notNowButton"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Not Now"
+            android:fontFamily="@font/ubuntu_medium"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/feedback_bottom_btnbg"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

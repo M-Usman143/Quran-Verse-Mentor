@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#04BADE</color>
+
+
+        <color name="colorPrimary">#2196F3</color>
+        <color name="colorPrimaryDark">#1565C0</color>
+        <color name="colorAccent">#FF4081</color>
+
+
+
+        <color name="colorPrimaryLight">#FF4081</color>
+        <color name="colorPrimaryLightDark">#D81B60</color>
+        <color name="colorAccentLight">#2196F3</color>
+
+    <color name="whatsapp_chat_bg_color">#ECE5DD</color>
+    <color name="whatsapp_input_bg_color">#FFFFFF</color>
+    <color name="whatsapp_hint_text_color">#9C9C9C</color>
+    <color name="whatsapp_sent_message_bg_color">#DCF8C6</color>
+    <color name="whatsapp_received_message_bg_color">#FFFFFF</color>
+    <color name="header_background_color">#075E54</color>
+
+    <!-- Username Text Color -->
+    <color name="username_text_color">#FFFFFF</color> <!-- White -->
+
+
+    <color name="colorPrimarys">#3F51B5</color>
+    <color name="colorPrimaryDarks">#303F9F</color>
+    <color name="colorAccents">#FF4081</color>
+    <color name="light_grays">#DDDDDD</color>
+    <color name="light_background">#F2F2F2</color>
+    <color name="shimmer_background">#dddddd</color>
+
+
+
+
+
+</resources>

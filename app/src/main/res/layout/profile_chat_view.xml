@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Sender's Name or Avatar -->
+
+    <!-- Message Content and Timestamp -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_user_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/man"
+            />
+
+        <!-- Muhammad Usman TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:id="@+id/usernameTextView"
+            android:text="Muhammad Usman"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_view_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColor="#757575"
+            android:layout_marginTop="8dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginStart="330dp"
+            android:text="Thu 12:30" />
+
+<!--left 330-->
+
+        <TextView
+            android:id="@+id/last_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#757575"
+            android:fontFamily="@font/ubuntu_medium"
+            android:layout_marginTop="40dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_marginStart="80dp"
+            android:text="Message content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:layout_marginTop="85dp"
+            android:background="@android:color/black" />
+
+<RelativeLayout
+    android:layout_width="20sp"
+    android:layout_height="20sp"
+    android:id="@+id/chatnumber_bg"
+    android:layout_marginLeft="350dp"
+    android:layout_marginTop="35dp"
+    android:background="@drawable/bgfor_chatnumber">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="17dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textStyle="bold"
+        android:id="@+id/messagesNumber"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

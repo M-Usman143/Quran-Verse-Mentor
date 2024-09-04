@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Feedback"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How was your session with your tutor?"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/playfair_display"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <!-- Circular ImageView -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/man"
+                android:id="@+id/userprofilepic"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <!-- Muhammad Usman TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:id="@+id/usernameTextView"
+                android:text="Muhammad Usman"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"/>
+
+                <TextView
+                android:id="@+id/first_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Quran Tutor"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="45dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+
+        <RatingBar
+            android:id="@+id/teacherRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_marginTop="20dp"
+            android:stepSize="1"
+            android:rating="0"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Did tutor respond at your requrest ?"
+                android:fontFamily="@font/playfair_display"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/chkbox1"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/chkbox2"
+        android:checked="false"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partially"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/chkbox3"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please leave your feedback below"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/playfair_display"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:transitionName="email_txt"
+            android:background="@drawable/corner_for_input_layout"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="300"
+            app:counterTextColor="@color/black"
+            android:id="@+id/comment"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="1dp"
+                android:textAlignment="textStart"
+                android:elevation="200dp"
+                android:background="#f5f3ed"
+                android:hint="About yourself"
+                android:textColorHint="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:textStyle="bold"
+        android:id="@+id/skipbtn"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        />
+<!--    left 140-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Send Feedback"
+        android:id="@+id/feedback_submitBTN"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        />
+<!--    left 5-->
+</LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

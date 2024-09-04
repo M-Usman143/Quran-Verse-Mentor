@@ -1,0 +1,56 @@
+<!-- res/layout/item_student.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/card_bg"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_marginStart="20dp"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewStudent"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/man"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+
+
+                />
+
+
+            <!-- Muhammad Usman TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:id="@+id/textViewStudentName"
+                android:text="Muhammad Usman"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

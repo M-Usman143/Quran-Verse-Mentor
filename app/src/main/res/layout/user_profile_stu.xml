@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".activities.UserProfile_stu">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_layout"
+        android:orientation="vertical"
+        android:id="@+id/firstLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/playfair_display"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_100sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            />
+<!--        text size 20-->
+        <!-- Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/men"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:scaleType="centerCrop" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_170sdp"
+            android:layout_centerHorizontal="true"
+            android:text="Nik Shaad"
+            android:fontFamily="@font/ubuntu_medium"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:textSize="@dimen/_30sdp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+        <!-- User Email -->
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_210sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:text="nikshaad@gmail.com"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:elevation="20dp"
+        android:background="@drawable/bg_sec_layout">
+
+        <!-- Editable Fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passward: "
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="#A9A9A9"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123-456-7890"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_100sdp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="#A9A9A9"
+                android:textSize="@dimen/_15sdp" />
+            <TextView
+                android:id="@+id/phones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123-456-7890"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_100sdp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginBottom="10dp" />
+
+
+<!--left 120-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Youe Registered:  "
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="#A9A9A9"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123-456-7890"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginBottom="10dp" />
+<!--left 50-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/secondLayout"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/thirdLayout"
+        android:visibility="gone"
+        android:layout_below="@+id/firstLayout"
+        android:orientation="vertical">
+
+        <!-- TextInputLayouts and other views -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:counterTextColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/EDfullname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginStart="1dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="1dp"
+                android:hint="Fullname"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--For Phone number-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/corner_for_input_layout"
+            android:layout_marginTop="10dp"
+            android:id="@+id/EDphoneNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="1dp"
+                android:background="@color/white"
+                android:textColorHint="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--for passward-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/corner_for_input_layout"
+            android:transitionName="email_txt"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/EDpassward"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="5dp"
+                android:inputType="textPassword"
+                android:layout_marginEnd="1dp"
+                android:background="@color/white"
+                android:hint="Passward"
+                android:textColorHint="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/editsavebutton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:backgroundTint="@color/black"
+        android:text="Save Profile"
+        android:layout_below="@id/thirdLayout"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp" />
+
+
+</RelativeLayout>
+
+</ScrollView>

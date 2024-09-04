@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- curved_bottom_background.xml -->
+    <solid android:color="@color/white" /> <!-- Background color -->
+    <corners android:topLeftRadius="50dp"
+        android:topRightRadius="50dp">
+
+    </corners>
+
+</shape>

@@ -1,0 +1,144 @@
+<!-- dialog_options.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:background="#044227">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_arrow"
+            android:id="@+id/crossbtn"
+            android:layout_marginStart="5dp"
+            />
+        <!-- Muhammad Usman TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/playfair_display"
+            android:id="@+id/title"
+            android:text="Quran Verse Mentor"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/cutom_dialog_bg"
+        android:id="@+id/relative_layout"
+        android:layout_marginTop="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/man"
+            android:id="@+id/userprofilepic"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            />
+        <!-- Muhammad Usman TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:id="@+id/usernameTextView"
+            android:text="Muhammad Usman"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/cutom_dialog_bg"
+            android:layout_marginTop="60dp">
+
+
+            <TextView
+                android:id="@+id/textView_managedProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Profile"
+                android:padding="12dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/textViewPaymentHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Schedule Classes"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textViewChats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chats"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/textViewprogressreport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress Report"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"/>
+            <TextView
+                android:layout_below="@id/relative_layout"
+                android:id="@+id/textViewSignOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
